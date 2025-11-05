@@ -16,7 +16,7 @@ public class Main {
             System.out.println("4 - Calculador de edad");
             System.out.println("5 - Generador de saludos");
             System.out.println("6 - Salir");
-            Thread.sleep(1000);
+            Thread.sleep(500);
 
             System.out.println("Introduce el número del programa a escoger:");
             int eleccionPrograma = print.nextInt();
@@ -57,6 +57,27 @@ public class Main {
         System.out.println(resultadoHexadecimal);
 
         Thread.sleep(3000);
+    }
+
+    public static void SimuladorDados(Scanner print) throws InterruptedException {
+        System.out.println("\n==================================");
+        System.out.println("======= Simulador de Dados =======");
+        System.out.println("==================================");
+
+        System.out.print("\nIngresa el número de dados que quieres tirar: ");
+        Thread.sleep(500);
+
+        int numDados = print.nextInt();
+
+        System.out.println("\n==================================");
+        System.out.println("=========== Resultados ===========");
+        System.out.println("==================================");
+
+        for (int i = 0; i < numDados ; i++) {
+            int contadorDados = i + 1;
+            int dado = (int) (Math.random() * 6) + 1;
+            System.out.println("Dado " + contadorDados + ": " + dado);
+        }
     }
 
     public static void CalculadorEdad(Scanner print) throws InterruptedException {
