@@ -39,4 +39,21 @@ public class Main {
             }
         }
     }
+    public static void ConversorBasesNumericas(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("==================================");
+        System.out.println("== Conversor de Bases Numéricas ==");
+        System.out.println("==================================");
+        System.out.print("Ingrese un número entero: ");
+        int numeroDecimal = scanner.nextInt();
+
+        System.out.println("numeroDecimal = " + numeroDecimal);
+
+        String resultadoBinario = "numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal);
+        System.out.println("resultadoBinario = " + resultadoBinario);
+
+        String resultadoHexadecimal = "numero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
+        System.out.println("resultadoHexadecimal = " + resultadoHexadecimal);
+    }
+
 }
