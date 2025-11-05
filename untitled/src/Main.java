@@ -97,11 +97,28 @@ public class Main {
         System.out.println("== GENERADOR SALUDOS ==");
         System.out.println("=======================\n");
         System.out.println("Introduce tu nombre:");
-
         String nombre = print.nextLine();
+
+        int i = (int) (Math.random() * 5) + 1;
+        switch (i) {
+            case 1:
+                System.out.println("¡Hola " + nombre + "! Bienvenido/a");
+                break;
+            case 2:
+                System.out.println("¡Hola " + nombre + "! Espero que estés bien!");
+                break;
+            case 3:
+                System.out.println("¡Bienvenido/a, " + nombre + "! Encantado de verte.");
+                break;
+            case 4:
+                System.out.println("Saludos " + nombre + "! Espero que tengas un gran día.");
+                break;
+            case 5:
+                System.out.println("¡Hey " + nombre + "! Gracias por venir.");
+                break;
+        }
         Thread.sleep(1000);
 
-        System.out.println("¡Hola " + nombre + "! Bienvenido/a");
     }
 
     public static void ConversorTemperatura(Scanner print) throws InterruptedException {
