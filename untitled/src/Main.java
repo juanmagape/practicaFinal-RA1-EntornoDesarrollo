@@ -31,10 +31,16 @@ public class Main {
                     Thread.sleep(1000);
                     break;
                 case 3:
+                    ConversorTemperatura(print);
+                    Thread.sleep(1000);
                     break;
                 case 4:
+                    CalculadorEdad(print);
+                    Thread.sleep(1000);
                     break;
                 case 5:
+                    GeneradorSaludos(print);
+                    Thread.sleep(1000);
                     break;
                 case 6:
                     bucle = false;
@@ -100,6 +106,7 @@ public class Main {
         System.out.println("== GENERADOR SALUDOS ==");
         System.out.println("=======================\n");
         System.out.println("Introduce tu nombre:");
+        print.nextLine();
         String nombre = print.nextLine();
 
         int i = (int) (Math.random() * 5) + 1;
