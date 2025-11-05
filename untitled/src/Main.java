@@ -60,13 +60,27 @@ public class Main {
     }
 
     public static void CalculadorEdad(Scanner print) throws InterruptedException {
-        System.out.println("\n=================== CALCULADOR DE EDAD ===================\n");
+        System.out.println("\n=======================");
+        System.out.println("== CALCULADORA DE EDAD ==");
+        System.out.println("=========================\n");
         System.out.println("Introduce tu año de nacimiento");
 
         int anyoNac = print.nextInt();
         int calculo = 2025 - anyoNac;
         System.out.println("\nSi naciste en " + anyoNac + ", tienes " + calculo + " años\n");
         Thread.sleep(3000);
+    }
+
+    public static void GeneradorSaludos(Scanner print) throws InterruptedException {
+        System.out.println("\n=====================");
+        System.out.println("== GENERADOR SALUDOS ==");
+        System.out.println("=======================\n");
+        System.out.println("Introduce tu nombre");
+
+        String nombre = print.nextLine();
+        Thread.sleep(1000);
+
+        System.out.println("¡Hola " + nombre + "! Bienvenido/a");
     }
 
 }
