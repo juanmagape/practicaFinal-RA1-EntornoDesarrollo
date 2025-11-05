@@ -10,7 +10,7 @@ public class Main {
         while (bucle) {
             System.out.println("\n=================== PRACTICA FINAL RA1 ===================\n");
             System.out.println("\n               Lista de programas a escoger\n");
-            System.out.println("1 - Generador de números aleatorio");
+            System.out.println("1 - Conversor de bases numéricas");
             System.out.println("2 - Simulador de dados");
             System.out.println("3 - Conversor de temperatura");
             System.out.println("4 - Calculador de edad");
