@@ -27,6 +27,8 @@ public class Main {
                     Thread.sleep(1000);
                     break;
                 case 2:
+                    SimuladorDados(print);
+                    Thread.sleep(1000);
                     break;
                 case 3:
                     break;
@@ -78,6 +80,7 @@ public class Main {
             int dado = (int) (Math.random() * 6) + 1;
             System.out.println("Dado " + contadorDados + ": " + dado);
         }
+        Thread.sleep(3000);
     }
 
     public static void CalculadorEdad(Scanner print) throws InterruptedException {
