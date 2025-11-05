@@ -90,7 +90,7 @@ public class Main {
     }
 
     public static void CalculadorEdad(Scanner print) throws InterruptedException {
-        System.out.println("\n=======================");
+        System.out.println("\n=========================");
         System.out.println("== CALCULADORA DE EDAD ==");
         System.out.println("=========================\n");
         System.out.println("Introduce tu año de nacimiento:");
@@ -102,7 +102,7 @@ public class Main {
     }
 
     public static void GeneradorSaludos(Scanner print) throws InterruptedException {
-        System.out.println("\n=====================");
+        System.out.println("\n=======================");
         System.out.println("== GENERADOR SALUDOS ==");
         System.out.println("=======================\n");
         System.out.println("Introduce tu nombre:");
