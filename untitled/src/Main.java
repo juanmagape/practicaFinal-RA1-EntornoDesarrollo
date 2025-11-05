@@ -39,7 +39,7 @@ public class Main {
             }
         }
     }
-    public static void ConversorBasesNumericas(){
+    public static void ConversorBasesNumericas() throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("==================================");
         System.out.println("== Conversor de Bases Numéricas ==");
@@ -57,6 +57,16 @@ public class Main {
 
         Thread.sleep(3000);
 
+    }
+
+    public static void CalculadorEdad(Scanner print) throws InterruptedException {
+        System.out.println("\n=================== CALCULADOR DE EDAD ===================\n");
+        System.out.println("Introduce tu año de nacimiento");
+
+        int anyoNac = print.nextInt();
+        int calculo = 2025 - anyoNac;
+        System.out.println("\nSi naciste en " + anyoNac + ", tienes " + calculo + " años\n");
+        Thread.sleep(3000);
     }
 
 }
