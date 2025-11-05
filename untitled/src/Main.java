@@ -16,9 +16,9 @@ public class Main {
             System.out.println("4 - Calculador de edad");
             System.out.println("5 - Generador de saludos");
             System.out.println("6 - Salir");
-            Thread.sleep(3000);
+            Thread.sleep(1000);
 
-            System.out.println("Introduce el número del programa a escoger");
+            System.out.println("Introduce el número del programa a escoger:");
             int eleccionPrograma = print.nextInt();
 
             switch (eleccionPrograma) {
@@ -63,7 +63,7 @@ public class Main {
         System.out.println("\n=======================");
         System.out.println("== CALCULADORA DE EDAD ==");
         System.out.println("=========================\n");
-        System.out.println("Introduce tu año de nacimiento");
+        System.out.println("Introduce tu año de nacimiento:");
 
         int anyoNac = print.nextInt();
         int calculo = 2025 - anyoNac;
@@ -75,7 +75,7 @@ public class Main {
         System.out.println("\n=====================");
         System.out.println("== GENERADOR SALUDOS ==");
         System.out.println("=======================\n");
-        System.out.println("Introduce tu nombre");
+        System.out.println("Introduce tu nombre:");
 
         String nombre = print.nextLine();
         Thread.sleep(1000);
@@ -83,4 +83,30 @@ public class Main {
         System.out.println("¡Hola " + nombre + "! Bienvenido/a");
     }
 
+    public static void ConversorTemperatura(Scanner print) throws InterruptedException {
+        System.out.println("\n==========================");
+        System.out.println("== CONVERSOR TEMPERATURA ==");
+        System.out.println("===========================\n");
+
+        System.out.println("\nQue conversión quieres hacer?");
+        System.out.println("1 - Fahrenheit a Celsius");
+        System.out.println("2 - Celsius a Fahrenheit\n");
+        int eleccion = print.nextInt();
+
+        if (eleccion == 1) {
+            System.out.println("Introduce los grados Fahrenheit a convertir:");
+            int fahrenheit = print.nextInt();
+
+            int celsius = (fahrenheit - 32) * 5/9;
+            System.out.println(celsius + " Grados Celsius");
+
+        } else if (eleccion == 2) {
+            System.out.println("Introduce los grados celsius a convertir:");
+            int  celsius = print.nextInt();
+
+            int fahrenheit = celsius * 9/5 + 32;
+            System.out.println(fahrenheit + " Grados Fahrenheit");
+        }
+        Thread.sleep(3000);
+    }
 }
