@@ -23,6 +23,8 @@ public class Main {
 
             switch (eleccionPrograma) {
                 case 1:
+                    ConversorBasesNumericas(print);
+                    Thread.sleep(1000);
                     break;
                 case 2:
                     break;
@@ -39,24 +41,22 @@ public class Main {
             }
         }
     }
-    public static void ConversorBasesNumericas() throws InterruptedException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("==================================");
+    public static void ConversorBasesNumericas(Scanner print) throws InterruptedException {
+        System.out.println("\n==================================");
         System.out.println("== Conversor de Bases Numéricas ==");
         System.out.println("==================================");
         System.out.print("Ingrese un número entero: ");
-        int numeroDecimal = scanner.nextInt();
+        int numeroDecimal = print.nextInt();
 
-        System.out.println("numeroDecimal = " + numeroDecimal);
+        System.out.println("\nnumeroDecimal = " + numeroDecimal);
 
-        String resultadoBinario = "numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal);
-        System.out.println("resultadoBinario = " + resultadoBinario);
+        String resultadoBinario = "Número binario de " + numeroDecimal + " : " + Integer.toBinaryString(numeroDecimal);
+        System.out.println(resultadoBinario);
 
-        String resultadoHexadecimal = "numero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
-        System.out.println("resultadoHexadecimal = " + resultadoHexadecimal);
+        String resultadoHexadecimal = "Número hexadecimal de " + numeroDecimal + " : " + Integer.toHexString(numeroDecimal);
+        System.out.println(resultadoHexadecimal);
 
         Thread.sleep(3000);
-
     }
 
     public static void CalculadorEdad(Scanner print) throws InterruptedException {
