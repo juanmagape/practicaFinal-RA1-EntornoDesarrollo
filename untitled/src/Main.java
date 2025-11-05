@@ -98,7 +98,7 @@ public class asd {
 
     // Calcula la edad según el año de nacimiento
     public static void CalculadorEdad(Scanner print) throws InterruptedException {
-        System.out.println("\n=======================");
+        System.out.println("\n=========================");
         System.out.println("== CALCULADORA DE EDAD ==");
         System.out.println("=========================\n");
         System.out.println("Introduce tu año de nacimiento:");
@@ -111,7 +111,7 @@ public class asd {
 
     // Genera un saludo aleatorio personalizado
     public static void GeneradorSaludos(Scanner print) throws InterruptedException {
-        System.out.println("\n=====================");
+        System.out.println("\n=======================");
         System.out.println("== GENERADOR SALUDOS ==");
         System.out.println("=======================\n");
         System.out.println("Introduce tu nombre:");
