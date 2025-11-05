@@ -54,6 +54,9 @@ public class Main {
 
         String resultadoHexadecimal = "numero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
         System.out.println("resultadoHexadecimal = " + resultadoHexadecimal);
+
+        Thread.sleep(3000);
+
     }
 
 }
